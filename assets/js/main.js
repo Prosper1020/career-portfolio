@@ -3,7 +3,7 @@
    ============================================ */
 
 // ---- ACCESS CONTROL ----
-const ACCESS_CODE = 'KK2026';  // Change this to your preferred access code
+const ACCESS_CODE = 'KK2026_1';  // Change this to your preferred access code
 const STORAGE_KEY = 'kk_portfolio_access';
 
 function checkAccess() {
