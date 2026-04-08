@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koffi Koumi, PhD — Career Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>">
+</head>
+<body>
+
+<!-- ==================== ACCESS GATE ==================== -->
+<div id="access-gate">
+  <div class="gate-container">
+    <div class="gate-logo">KK</div>
+    <div class="gate-subtitle">Career Portfolio</div>
+    
+    <div id="gate-request" class="gate-form">
+      <p class="gate-message">This portfolio is private. Please request access or enter your access code below.</p>
+      <input type="text" class="gate-input" id="gate-name" placeholder="Your full name">
+      <input type="email" class="gate-input" id="gate-email" placeholder="Your email address">
+      <input type="text" class="gate-input" id="gate-reason" placeholder="How do we know each other? (optional)">
+      <button class="gate-btn gate-btn-primary" onclick="requestAccess()">Request Access</button>
+      <div class="gate-divider">or</div>
+      <input type="password" class="gate-input" id="gate-code" placeholder="Enter access code">
+      <button class="gate-btn gate-btn-secondary" onclick="enterCode()">Enter with Code</button>
+      <div id="gate-status" class="gate-status"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== NAVIGATION ==================== -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-brand">Koffi Koumi</div>
+    <div class="nav-hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">About</a></li>
+      <li><a href="#smart-manufacturing">Smart Mfg</a></li>
+      <li><a href="#strategy">Strategy</a></li>
+      <li><a href="#ai-ml">AI & ML</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#career">Career</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#publications">IP & Publications</a></li>
+      <li><a href="#cv">CV</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ==================== HERO / ABOUT ==================== -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-content fade-in">
+    <div class="hero-labels">
+      <span class="label">PhD Engineering</span>
+      <span class="label">INSEAD MBA</span>
+      <span class="label">xMcKinsey</span>
+      <span class="label">MSc AI — Sorbonne</span>
+      <span class="label">Manufacturing</span>
+      <span class="label">CESMII Certified</span>
+    </div>
+    <h1 class="hero-name"><span>Koffi Espoir Koumi, PhD</span></h1>
+    <p class="hero-tagline">
+      AI Business Transformation · Smart Manufacturing · Strategy Consulting
+    </p>
+    <div class="hero-quote">
+      <p>As AI transforms software, <strong>Industry is the next frontier.</strong> While AI presents a massive opportunity in manufacturing, successful impact lies at the intersection of strategy and technical skills — AI and manufacturing expertise combined.</p>
+      <p style="margin-top:12px;">Strong strategy without technical depth leads to visions that never get implemented. Strong technical skills without strategy leads to solutions that never find their business case. <strong>The real competitive edge is having both.</strong></p>
+    </div>
+
+    <div class="stats-row" style="margin-top: 40px;">
+      <div class="stat-box">
+        <div class="number">10+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-box">
+        <div class="number">€6M+</div>
+        <div class="stat-label">Budget Managed</div>
+      </div>
+      <div class="stat-box">
+        <div class="number">60+</div>
+        <div class="stat-label">Stakeholders Led</div>
+      </div>
+      <div class="stat-box">
+        <div class="number">2</div>
+        <div class="stat-label">Patents Filed</div>
+      </div>
+      <div class="stat-box">
+        <div class="number">4</div>
+        <div class="stat-label">Scientific Publications</div>
+      </div>
+    </div>
+
+    <div class="hero-cta">
+      <a href="#career" class="btn btn-gold">Explore Career</a>
+      <a href="#cv" class="btn btn-outline">View CV</a>
+      <a href="https://www.linkedin.com/in/koffi-espoir-koumi/" target="_blank" class="btn btn-outline">LinkedIn ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SMART MANUFACTURING ==================== -->
+<section id="smart-manufacturing">
+  <div class="section-inner fade-in">
+    <div class="section-header">
+      <div class="section-label">02 — Expertise</div>
+      <h2 class="section-title">Smart Manufacturing & Operational Efficiency</h2>
+      <p class="section-desc">
+        Bridging the gap between AI technology and industrial operations. Combining hands-on manufacturing engineering, data science, and the CESMII Smart Manufacturing framework to drive measurable operational improvements.
+      </p>
+    </div>
+
+    <!-- CESMII Section -->
+    <div class="subsection">
+      <h3 class="subsection-title">CESMII — The Smart Manufacturing Institute</h3>
+      <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 20px;">
+        <strong style="color: var(--gold);">CESMII</strong> (Clean Energy Smart Manufacturing Innovation Institute) is the <strong>U.S. Department of Energy's national institute</strong> dedicated to accelerating smart manufacturing adoption across American industry. It provides frameworks, tools, and best practices to help companies improve efficiency, reduce waste, and enhance operational performance through data-driven manufacturing.
+      </p>
+      <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 30px;">
+        As a CESMII-certified professional, I leverage their <strong>Smart Manufacturing State Transition Matrix</strong> — a comprehensive assessment framework that evaluates an organization's maturity across multiple dimensions including technology, data management, workforce, and business processes. This framework enables targeted improvement roadmaps aligned with each company's strategic priorities.
+      </p>
+    </div>
+
+    <!-- CESMII Matrix -->
+    <div class="matrix-container">
+      <h4 style="color: var(--gold); margin-bottom: 15px;">📊 CESMII Smart Manufacturing Assessment Dimensions</h4>
+      <table class="matrix-table">
+        <thead>
+          <tr>
+            <th>Dimension</th>
+            <th>Level 1 — Initial</th>
+            <th>Level 2 — Managed</th>
+            <th>Level 3 — Defined</th>
+            <th>Level 4 — Optimized</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Technology & IT/OT</strong></td>
+            <td>Manual systems, siloed data</td>
+            <td>Basic automation, some connectivity</td>
+            <td>Integrated IT/OT systems</td>
+            <td>AI-driven, self-optimizing</td>
+          </tr>
+          <tr>
+            <td><strong>Data Management</strong></td>
+            <td>Paper-based, no analytics</td>
+            <td>Spreadsheet-driven reporting</td>
+            <td>Real-time dashboards & KPIs</td>
+            <td>Predictive & prescriptive analytics</td>
+          </tr>
+          <tr>
+            <td><strong>Workforce</strong></td>
+            <td>Limited digital skills</td>
+            <td>Basic digital literacy</td>
+            <td>Data-literate teams</td>
+            <td>AI-augmented workforce</td>
+          </tr>
+          <tr>
+            <td><strong>Business Processes</strong></td>
+            <td>Ad-hoc, reactive</td>
+            <td>Standardized processes</td>
+            <td>Continuous improvement culture</td>
+            <td>Autonomous optimization</td>
+          </tr>
+          <tr>
+            <td><strong>Supply Chain</strong></td>
+            <td>Limited visibility</td>
+            <td>Basic tracking & reporting</td>
+            <td>End-to-end visibility</td>
+            <td>Predictive supply chain</td>
+          </tr>
+          <tr>
+            <td><strong>Digital-First Strategy</strong></td>
+            <td>No digital strategy</td>
+            <td>Pilot projects</td>
+            <td>Scaled digital initiatives</td>
+            <td>Fully digital enterprise</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 12px;">Source: CESMII – The Smart Manufacturing Institute, www.cesmii.org</p>
+    </div>
+
+    <!-- Project Cards -->
+    <div class="subsection">
+      <h3 class="subsection-title">Key Projects & Deliverables</h3>
+      <div class="slide-gallery">
+        <div class="slide-item" onclick="openPDF('slides/2. SmartManufacturing_TAI_clean.pdf')">
+          <div class="slide-preview" style="background: linear-gradient(135deg, #1a3a5c, #0f3460);">
+            <span class="icon">🛡️</span>
+            <div class="overlay"><span style="color:white;font-weight:600;">Click to View</span></div>
+          </div>
+          <div class="slide-info">
+            <h4>Leader in the Defense Industry — Supply Chain Dashboard</h4>
+            <p>End-to-end supplier heatmap, rate enablement analysis, and capacity planning for production targets. Power BI cockpit for supplier performance monitoring.</p>
+          </div>
+        </div>
+
+        <div class="slide-item" onclick="openPDF('slides/2. SmartManufacturing_CESMII_.pdf')">
+          <div class="slide-preview" style="background: linear-gradient(135deg, #2a1a3c, #3d1a5c);">
+            <span class="icon">🏭</span>
+            <div class="overlay"><span style="color:white;font-weight:600;">Click to View</span></div>
+          </div>
+          <div class="slide-info">
+            <h4>CESMII Assessment Framework</h4>
+            <p>Smart Manufacturing State Transition Matrix — evaluation framework covering technology, workforce, data management, and digital strategy dimensions.</p>
+          </div>
+        </div>
+
+        <div class="slide-item" onclick="openPDF('slides/2. Dashboard_Map_Safran.pdf')">
+          <div class="slide-preview" style="background: linear-gradient(135deg, #1a3c2a, #0f4630);">
+            <span class="icon">📊</span>
+            <div class="overlay"><span style="color:white;font-weight:600;">Click to View</span></div>
+          </div>
+          <div class="slide-info">
+            <h4>Leader in the Aerospace Industry — Supply Chain Mapping</h4>
+            <p>Interactive Power BI dashboard mapping the supplier network with risk concentration analysis and critical path identification.</p>
+            <span class="card-tag">Power BI Dashboard</span>
+          </div>
+        </div>
+
+        <div class="slide-item" onclick="openPDF('slides/2. Dashboard_Map_TAI_SC.pdf')">
+          <div class="slide-preview" style="background: linear-gradient(135deg, #1a2a3c, #0f2460);">
+            <span class="icon">🛡️</span>
+            <div class="overlay"><span style="color:white;font-weight:600;">Click to View</span></div>
+          </div>
+          <div class="slide-info">
+            <h4>Leader in the Defense Industry — Supply Chain Mapping</h4>
+            <p>Power BI dashboard mapping the defense supply chain network with supplier performance tracking and critical path analysis.</p>
+            <span class="card-tag">Power BI Dashboard</span>
+          </div>
+        </div>
+
+        <div class="slide-item" onclick="openPDF('slides/2. Dashboard_Map_TAI_Arabelle.pdf')">
+          <div class="slide-preview" style="background: linear-gradient(135deg, #3c2a1a, #5c3d0f);">
+            <span class="icon">⚡</span>
+            <div class="overlay"><span style="color:white;font-weight:600;">Click to View</span></div>
+          </div>
+          <div class="slide-info">
+            <h4>Leader in the Nuclear Industry — Visual Management</h4>
+            <p>Visual management Power BI dashboard for operational performance monitoring in the nuclear energy sector.</p>
+            <span class="card-tag">Power BI Dashboard</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== STRATEGY & TRANSFORMATION ==================== -->
+<section id="strategy">
+  <div class="section-inner fade-in">
+    <div class="section-header">
+      <div class="section-label">03 — Consulting</div>
+      <h2 class="section-title">Strategy & Transformation</h2>
+      <p class="section-desc">
+        From McKinsey's rigorous problem-solving methodology to Capgemini Invent's AI strategy practice — combining world-class consulting frameworks with deep technical expertise.
+      </p>
+    </div>
+
+    <!-- Business Strategy -->
+    <div class="subsection">
+      <h3 class="subsection-title">Business Strategy — McKinsey & Company</h3>
+      <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 20px;">
+        As a Senior Strategy Consultant at McKinsey & Company (Europe/Africa, 2022–2024), I worked on high-impact transformations across multiple sectors including oil & gas, energy, telecommunications, and government digital strategy. My work consistently delivered measurable outcomes:
+      </p>
+      
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3>Operational Efficiency — Oil & Gas</h3>
+          <p>Diagnosed and implemented an operational efficiency program that increased annual production by 15% for a major oil & gas client. End-to-end from diagnostic through implementation.</p>
+          <span class="card-tag">+15% Production</span>
+        </div>
+        <div class="card">
+          <div class="card-icon">🌍</div>
+          <h3>Digital Expansion — Connectivity</h3>
+          <p>Developed and operationalized the structure for implementing the digital expansion strategy for an African country, connecting 300,000 households to the Internet.</p>
+          <span class="card-tag">300K Households Connected</span>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏢</div>
+          <h3>Organizational Redesign — Energy</h3>
+          <p>Designed a new organizational structure for an energy company transitioning to a multi-asset portfolio, with assets growing from €2B to €8B.</p>
+          <span class="card-tag">€2B → €8B Assets</span>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏥</div>
+          <h3>Digital Transformation — Government</h3>
+          <p>Designed digital transformation initiatives across agriculture (mobile e-subsidy app), health (telemedicine platform), and education (IT certification programs) for a West African government.</p>
+          <span class="card-tag">Multi-Sector</span>
+        </div>
+      </div>
+
+      <!-- McKinsey Frameworks -->
+      <div class="slide-gallery" style="margin-top: 30px;">
+        <div class="slide-item" onclick="openPDF('slides/3. Strategy_Transfo_McKinsey_7steps_ProblemSOlving.pdf')">
+          <div class="slide-preview" style="background: linear-gradient(135deg, #1a2a3c, #0f2460);">
+            <span class="icon">🧩</span>
+            <div class="overlay"><span style="color:white;font-weight:600;">Click to View</span></div>
+          </div>
+          <div class="slide-info">
+            <h4>7-Step Problem Solving</h4>
+            <p>Structured problem-solving methodology — from problem definition to synthesis and recommendation.</p>
+          </div>
+        </div>
+
+        <div class="slide-item" onclick="openPDF('slides/3. Strategy_Transfo_Influence_Model.pdf')">
+          <div class="slide-preview" style="background: linear-gradient(135deg, #2a1a2c, #3d0f46);">
+            <span class="icon">🎯</span>
+            <div class="overlay"><span style="color:white;font-weight:600;">Click to View</span></div>
+          </div>
+          <div class="slide-info">
+            <h4>Influence Model</h4>
+            <p>Behavioral change framework — driving adoption through 4 levers of transformation for sustainable organizational change.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI Strategy -->
+    <div class="subsection" style="margin-top: 60px;">
+      <h3 class="subsection-title">AI Strategy — Capgemini Invent</h3>
+      <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 20px;">
+        As AI Strategy Project Manager at Capgemini Invent (2025–2026), I led AI strategy development for defense and aerospace clients. My work focused on bridging the gap between AI potential and business reality through rigorous use-case identification, prioritization, and roadmap development.
+      </p>
+
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">🛡️</div>
+          <h3>AI Strategy for Defense</h3>
+          <p>Developed a comprehensive AI strategy for a defense industry player, including use-case prioritization matrix (value vs. feasibility), roadmap, and governance framework.</p>
+          <span class="card-tag">Defense Sector</span>
+        </div>
+        <div class="card">
+          <div class="card-icon">📉</div>
+          <h3>Supply Chain Turnaround</h3>
+          <p>Piloted the supply chain turnaround for a major aerospace player, using Python-based data mining to identify critical parts impacting deliveries and building a performance cockpit in Power BI.</p>
+          <span class="card-tag">Defense & Aerospace</span>
+        </div>
+      </div>
+
+      <div class="slide-gallery" style="margin-top: 30px;">
+        <div class="slide-item" onclick="openPDF('slides/3. AI_Strategy_Part_.pdf')">
+          <div class="slide-preview" style="background: linear-gradient(135deg, #1a3c1a, #0f4620);">
+            <span class="icon">🤖</span>
+            <div class="overlay"><span style="color:white;font-weight:600;">Click to View</span></div>
+          </div>
+          <div class="slide-info">
+            <h4>AI Use Case Prioritization Matrix</h4>
+            <p>Value vs. feasibility assessment framework for evaluating and prioritizing AI use cases in enterprise context.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== AI & MACHINE LEARNING ==================== -->
+<section id="ai-ml">
+  <div class="section-inner fade-in">
+    <div class="section-header">
+      <div class="section-label">04 — Technical</div>
+      <h2 class="section-title">Machine Learning & AI</h2>
+      <p class="section-desc">
+        Years of building production ML models in aerospace — from digital twins and predictive analytics at Safran to AI strategy at Capgemini — deepened by a Machine Learning Engineering degree at Sorbonne University to master the latest advances in the field.
+      </p>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">🎓</div>
+        <h3>MSc Machine Learning Engineering</h3>
+        <p>Sorbonne University — Intensive 6-month bootcamp covering data science and MLOps. End-to-end ML projects including CO2 emission prediction (XGBoost, F1: 98%) and weather forecasting MLOps pipeline (FastAPI, Docker, CI/CD).</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">✈️</div>
+        <h3>Digital Twin — Safran</h3>
+        <p>Developed a digital twin for a bearing test rig, integrating sensor data (rotation speed, oil temperature) with predictive analytics (SVM) to simulate performance. Reduced test failures by 30%.</p>
+        <span class="card-tag">-30% Test Failures</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚙️</div>
+        <h3>ML for Weight Optimization</h3>
+        <p>Built a Machine Learning model to reduce engine component weight by 15%, generating €2.5M annual savings. Combined physics-informed constraints with data-driven optimization.</p>
+        <span class="card-tag">€2.5M/year Savings</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔬</div>
+        <h3>Predictive Reliability</h3>
+        <p>Led the development of a complex model to predict 10⁻⁸ level reliability for jet engine components, managing a €6M budget and 60 international stakeholders. Filed a patent on the methodology.</p>
+        <span class="card-tag">Patent Filed</span>
+      </div>
+    </div>
+
+    <!-- AI Stack -->
+    <div class="subsection" style="margin-top: 50px;">
+      <h3 class="subsection-title">Frequently Used AI Stack</h3>
+      <div class="stack-grid">
+        <div class="stack-item">
+          <div class="name">🤖 Claude Code</div>
+          <div class="desc">Anthropic's AI coding agent for complex development tasks</div>
+        </div>
+        <div class="stack-item">
+          <div class="name">🌐 Manus AI</div>
+          <div class="desc">Autonomous AI agent for research and multi-step tasks</div>
+        </div>
+        <div class="stack-item">
+          <div class="name">⚡ Hermes Agent</div>
+          <div class="desc">CLI AI agent for automation, DevOps, and orchestration</div>
+        </div>
+        <div class="stack-item">
+          <div class="name">📎 Paperclip</div>
+          <div class="desc">AI-powered productivity and workflow assistant</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tech Stack -->
+    <div class="subsection" style="margin-top: 40px;">
+      <h3 class="subsection-title">Technical Skills</h3>
+      <div class="stack-grid">
+        <div class="stack-item">
+          <div class="name">Python</div>
+          <div class="desc">ML, Data Science, Automation</div>
+        </div>
+        <div class="stack-item">
+          <div class="name">SQL</div>
+          <div class="desc">Data Engineering & Analytics</div>
+        </div>
+        <div class="stack-item">
+          <div class="name">FastAPI / Docker</div>
+          <div class="desc">API Development & Containers</div>
+        </div>
+        <div class="stack-item">
+          <div class="name">MLflow / Airflow</div>
+          <div class="desc">MLOps & Pipeline Orchestration</div>
+        </div>
+        <div class="stack-item">
+          <div class="name">Power BI</div>
+          <div class="desc">Dashboards & Visual Analytics</div>
+        </div>
+        <div class="stack-item">
+          <div class="name">AWS</div>
+          <div class="desc">Cloud Infrastructure</div>
+        </div>
+        <div class="stack-item">
+          <div class="name">XGBoost / SVM</div>
+          <div class="desc">Machine Learning Models</div>
+        </div>
+        <div class="stack-item">
+          <div class="name">Deep Learning</div>
+          <div class="desc">Neural Networks & LLMs</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="https://github.com/Prosper1020" target="_blank" class="btn btn-outline" style="font-size: 1rem;">
+        GitHub — Prosper1020 ↗
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== LEADERSHIP & MENTORING ==================== -->
+<section id="leadership">
+  <div class="section-inner fade-in">
+    <div class="section-header">
+      <div class="section-label">05 — Impact</div>
+      <h2 class="section-title">Leadership & Mentoring</h2>
+      <p class="section-desc">
+        Leading multicultural teams across continents, mentoring the next generation of engineers, and driving organizational change at scale.
+      </p>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">👥</div>
+        <h3>International Program Management</h3>
+        <p>Managed 60+ stakeholders across France, Germany, Italy, United States, and India for a €6M R&D program at Safran Aircraft Engines. Coordinated senior executives, engineers, and procurement teams.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎓</div>
+        <h3>Academic Mentoring</h3>
+        <p>Mentored 30+ engineering students from INSA-Lyon and other institutions. Hired and supervised 3 PhD thesis students and served as a PhD thesis evaluation committee member.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌍</div>
+        <h3>ENSI-INSA Dual Degree Program</h3>
+        <p>Established a dual-degree program between ENSI (Togo) and INSA-Lyon (France), creating a pathway for West African engineering talent to access top French engineering education.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📋</div>
+        <h3>PMP Certified Project Manager</h3>
+        <p>Project Management Professional (PMP) certification — demonstrating mastery of project management methodologies, stakeholder management, and budget planning across complex programs.</p>
+        <br>
+        <a href="assets/docs/PMP_Certification.pdf" target="_blank" class="download-btn">📄 View PMP Certificate</a>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏛️</div>
+        <h3>INSEAD Alumni France — Volunteer</h3>
+        <p>Active volunteer in the INSEAD Alumni France community, contributing to alumni events, networking initiatives, and knowledge-sharing sessions for the French INSEAD network.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🇨🇳</div>
+        <h3>INSEAD China Club France</h3>
+        <p>Member of the INSEAD China Club France community, fostering cross-cultural business connections and insights on the France-China business corridor.</p>
+      </div>
+    </div>
+
+    <div class="stats-row" style="margin-top: 40px;">
+      <div class="stat-box">
+        <div class="number">60+</div>
+        <div class="stat-label">Global Stakeholders</div>
+      </div>
+      <div class="stat-box">
+        <div class="number">30+</div>
+        <div class="stat-label">Students Mentored</div>
+      </div>
+      <div class="stat-box">
+        <div class="number">3</div>
+        <div class="stat-label">PhD Students Supervised</div>
+      </div>
+      <div class="stat-box">
+        <div class="number">5</div>
+        <div class="stat-label">Countries Managed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CAREER TRAJECTORY ==================== -->
+<section id="career">
+  <div class="section-inner fade-in">
+    <div class="section-header">
+      <div class="section-label">06 — Journey</div>
+      <h2 class="section-title">Career Trajectory</h2>
+      <p class="section-desc">
+        A decade-long journey from aerospace engineering to AI-driven business transformation, connecting the worlds of technology, strategy, and industry.
+      </p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2026 – Present</div>
+        <div class="timeline-title">Independent Consultant <span class="highlight-tag">Current</span></div>
+        <div class="timeline-company">Self-employed — France</div>
+        <div class="timeline-desc">
+          <ul>
+            <li>Providing strategic consulting at the intersection of AI, smart manufacturing, and digital transformation</li>
+            <li>Advising industrial clients on AI strategy, operational efficiency, and Industry 4.0 roadmaps</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2025 – 2026</div>
+        <div class="timeline-title">AI Strategy Project Manager</div>
+        <div class="timeline-company">Capgemini Invent — Paris, France</div>
+        <div class="timeline-desc">
+          <ul>
+            <li>Developed AI strategy for a defense industry player with use-case prioritization and roadmap</li>
+            <li>Piloted supply chain turnaround for Turkish Aerospace using Python data mining</li>
+            <li>Created Power BI performance cockpit and operational routines</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Aug 2024 – Jan 2025</div>
+        <div class="timeline-title">Advanced AI & Cloud Training</div>
+        <div class="timeline-company">Sorbonne University — Paris, France</div>
+        <div class="timeline-desc">
+          <ul>
+            <li>6-month intensive bootcamp on data science, MLOps, and Cloud</li>
+            <li>End-to-end ML projects: CO2 prediction (XGBoost, F1: 98%), weather forecasting MLOps pipeline</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2022 – 2024</div>
+        <div class="timeline-title">Senior Strategy Consultant</div>
+        <div class="timeline-company">McKinsey & Company — Europe / Africa</div>
+        <div class="timeline-desc">
+          <ul>
+            <li>+15% annual production increase through operational efficiency program (Oil & Gas)</li>
+            <li>Connected 300,000 households to Internet through digital expansion strategy</li>
+            <li>Organizational redesign for €2B→€8B energy asset portfolio transition</li>
+            <li>Multi-sector digital transformation for a West African government</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2022</div>
+        <div class="timeline-title">Investment Consultant</div>
+        <div class="timeline-company">E3 Capital — Nairobi, Kenya</div>
+        <div class="timeline-desc">
+          <ul>
+            <li>Market research and due diligence for 30+ climate tech startups in Africa</li>
+            <li>Venture capital fund managing €175M in assets</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2021 – 2022</div>
+        <div class="timeline-title">MBA</div>
+        <div class="timeline-company">INSEAD — Fontainebleau, France</div>
+        <div class="timeline-desc">
+          <ul>
+            <li>Specializations: Innovation Strategy, Competitive Strategy, Finance</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2019 – 2021</div>
+        <div class="timeline-title">Senior R&D Project Manager & Data Scientist <span class="highlight-tag">Digital Twin</span></div>
+        <div class="timeline-company">Safran Aircraft Engines — Paris, France</div>
+        <div class="timeline-desc">
+          <ul>
+            <li><strong>Digital Twin:</strong> Developed a digital twin for a bearing test rig integrating sensor data and predictive analytics (SVM), reducing test failures by 30%</li>
+            <li>ML model reducing engine component weight by 15% → €2.5M/year savings</li>
+            <li>Managed €6M budget and 60 international stakeholders</li>
+            <li>Patent filed for a new reliability prediction methodology</li>
+            <li>Trained 5 junior and 6 senior team members on ML algorithms</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2017 – 2019</div>
+        <div class="timeline-title">R&D Project Manager <span class="highlight-tag">Test Rig</span></div>
+        <div class="timeline-company">Safran Aircraft Engines — Paris, France</div>
+        <div class="timeline-desc">
+          <ul>
+            <li><strong>Test Rig:</strong> Led the design and manufacturing of a 50m² test rig (€3M) for testing aircraft engine components</li>
+            <li>Managed €4M budget and 45 stakeholders in France and United States</li>
+            <li>Initiated Safran–university research collaborations across France</li>
+            <li>Negotiated supplier contracts (including one of €2M)</li>
+            <li>Awarded "Best R&T Stand" Award</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2015 – 2017</div>
+        <div class="timeline-title">Design Office Engineer</div>
+        <div class="timeline-company">Safran Aircraft Engines — Villaroche, France</div>
+        <div class="timeline-desc">
+          <ul>
+            <li>Proposed solutions for critical certification issues on LEAP aircraft engines</li>
+            <li>Open innovation award for rotor/stator sealing innovation → €0.6M/year savings</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2012 – 2015</div>
+        <div class="timeline-title">PhD in Mechanical Engineering</div>
+        <div class="timeline-company">INSA-Lyon — Lyon, France</div>
+        <div class="timeline-desc">
+          <ul>
+            <li>Advanced Numerical Modeling, Materials, and Contact Mechanics</li>
+            <li>National Best PhD Thesis Award (HIRN Prize)</li>
+            <li>1 patent delivered, 4 scientific publications</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== EDUCATION & CERTIFICATIONS ==================== -->
+<section id="education">
+  <div class="section-inner fade-in">
+    <div class="section-header">
+      <div class="section-label">07 — Foundation</div>
+      <h2 class="section-title">Education & Certifications</h2>
+    </div>
+
+    <div class="edu-card">
+      <div class="edu-icon">🎓</div>
+      <div class="edu-details">
+        <h3>MSc Machine Learning Engineering</h3>
+        <div class="school">Sorbonne University — Paris, France</div>
+        <div class="year">2024 – 2025</div>
+        <p>6-month intensive bootcamp covering data science, MLOps, and Cloud. Two end-to-end ML projects: CO2 emission prediction and weather forecasting pipeline.</p>
+      </div>
+    </div>
+
+    <div class="edu-card">
+      <div class="edu-icon">🏛️</div>
+      <div class="edu-details">
+        <h3>Master of Business Administration (MBA)</h3>
+        <div class="school">INSEAD — Fontainebleau, France</div>
+        <div class="year">2021 – 2022</div>
+        <p>Specializations: Innovation Strategy, Competitive Strategy, Finance. World's #1 MBA program (Financial Times).</p>
+      </div>
+    </div>
+
+    <div class="edu-card">
+      <div class="edu-icon">🔬</div>
+      <div class="edu-details">
+        <h3>Doctor of Philosophy (PhD) — Mechanical Engineering</h3>
+        <div class="school">INSA-Lyon — Lyon, France</div>
+        <div class="year">2012 – 2015</div>
+        <p>Advanced Numerical Modeling, Material, and Contact Mechanics. <strong>Winner of the National Best PhD Thesis Award (HIRN Prize).</strong></p>
+        <br>
+        <a href="https://www.ingenierie-at-lyon.org/4095-2/" target="_blank" class="download-btn">🏆 PhD Thesis Award ↗</a>
+        &nbsp;
+        <a href="https://theses.hal.science/tel-01371012/" target="_blank" class="download-btn">📄 Full PhD Thesis ↗</a>
+      </div>
+    </div>
+
+    <div class="subsection" style="margin-top: 40px;">
+      <h3 class="subsection-title">Certifications</h3>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">📋</div>
+          <h3>Project Management Professional (PMP)</h3>
+          <p>PMI-certified project management methodology expertise.</p>
+          <br>
+          <a href="assets/docs/PMP_Certification.pdf" target="_blank" class="download-btn">📄 View Certificate</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏭</div>
+          <h3>CESMII Smart Manufacturing</h3>
+          <p>US DOE Smart Manufacturing Institute certification on SM assessment frameworks and maturity models.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🤖</div>
+          <h3>AI Product Manager</h3>
+          <p>Certification covering AI product lifecycle, use case prioritization, and deployment strategies.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔧</div>
+          <h3>MLflow & FastAPI</h3>
+          <p>MLOps toolchain certifications for experiment tracking, model registry, and API serving.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💡</div>
+          <h3>Prompt Engineering</h3>
+          <p>Advanced techniques for LLM interaction, chain-of-thought reasoning, and AI agent orchestration.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🧠</div>
+          <h3>Generative AI with LLMs</h3>
+          <p>Comprehensive certification on large language models, fine-tuning, and enterprise AI applications.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== IP & PUBLICATIONS ==================== -->
+<section id="publications">
+  <div class="section-inner fade-in">
+    <div class="section-header">
+      <div class="section-label">08 — Research</div>
+      <h2 class="section-title">IP & International Publications</h2>
+      <p class="section-desc">
+        A research foundation spanning contact mechanics, material science, and jet engine component reliability — with patents and peer-reviewed publications.
+      </p>
+    </div>
+
+    <div style="text-align: center; margin-bottom: 40px;">
+      <a href="https://scholar.google.com/citations?user=naaze50AAAAJ&hl=en&oi=ao" target="_blank" class="btn btn-gold">
+        Google Scholar Profile ↗
+      </a>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection-title">Patents</h3>
+      
+      <div class="pub-item">
+        <h4>Tribomètre pour la mesure de champs de déplacements à l'interface de deux éléments</h4>
+        <div class="pub-meta">Tribometer for measuring displacement fields at the interface of two elements</div>
+        <a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=FR428027366" target="_blank">View Patent on WIPO ↗</a>
+      </div>
+
+      <div class="pub-item">
+        <h4>Procédé de détermination de la fiabilité d'un roulement</h4>
+        <div class="pub-meta">Method for determining the reliability of a bearing — Filed at Safran Aircraft Engines</div>
+        <a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=FR193239215" target="_blank">View Patent on WIPO ↗</a>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection-title">Scientific Publications</h3>
+
+      <div class="pub-item">
+        <h4>Modeling of the contact between a rigid indenter and a heterogeneous viscoelastic material</h4>
+        <div class="pub-meta">International Journal — Contact Mechanics & Tribology</div>
+        <a href="https://scholar.google.com/citations?user=naaze50AAAAJ&hl=en&oi=ao" target="_blank">View on Google Scholar ↗</a>
+      </div>
+
+      <div class="pub-item">
+        <h4>Modélisation du contact entre matériaux viscoélastiques</h4>
+        <div class="pub-meta">French Scientific Journal — Viscoelastic Contact Modeling</div>
+        <a href="https://scholar.google.com/citations?user=naaze50AAAAJ&hl=en&oi=ao" target="_blank">View on Google Scholar ↗</a>
+      </div>
+
+      <div class="pub-item">
+        <h4>Rolling contact of a rigid sphere / sliding of a spherical indenter upon a viscoelastic half-space containing an ellipsoidal inhomogeneity</h4>
+        <div class="pub-meta">International Journal — Advanced Mechanics</div>
+        <a href="https://scholar.google.com/citations?user=naaze50AAAAJ&hl=en&oi=ao" target="_blank">View on Google Scholar ↗</a>
+      </div>
+
+      <div class="pub-item">
+        <h4>Modélisation du contact entre matériaux hétérogènes: Application au contact Aube/Disque</h4>
+        <div class="pub-meta">Application to turbine blade/disk contact — Safran-related research</div>
+        <a href="https://scholar.google.com/citations?user=naaze50AAAAJ&hl=en&oi=ao" target="_blank">View on Google Scholar ↗</a>
+      </div>
+
+      <div class="pub-item">
+        <h4>Development of a test-rig for advanced rotor–stator seals used in jet engines: Part I</h4>
+        <div class="pub-meta">International Journal — Aerospace Engineering & Test Rigs</div>
+        <a href="https://scholar.google.com/citations?user=naaze50AAAAJ&hl=en&oi=ao" target="_blank">View on Google Scholar ↗</a>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px;">
+      <a href="https://theses.hal.science/tel-01371012/" target="_blank" class="btn btn-outline">
+        📄 Full PhD Thesis (HAL) ↗
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CV ==================== -->
+<section id="cv">
+  <div class="section-inner fade-in">
+    <div class="section-header">
+      <div class="section-label">09 — Resume</div>
+      <h2 class="section-title">Curriculum Vitae</h2>
+    </div>
+    <div class="cv-embed">
+      <iframe src="assets/docs/CV_Koffi_Koumi.pdf" title="CV"></iframe>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="assets/docs/CV_Koffi_Koumi.pdf" target="_blank" class="btn btn-gold">📄 Download Full CV</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <p>© 2026 Koffi Espoir Koumi, PhD — All rights reserved.</p>
+  <p style="margin-top: 8px;">
+    <a href="https://www.linkedin.com/in/koffi-espoir-koumi/" target="_blank">LinkedIn</a> · 
+    <a href="https://github.com/Prosper1020" target="_blank">GitHub</a> · 
+    <a href="https://scholar.google.com/citations?user=naaze50AAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a> · 
+    <a href="mailto:koffiespoir.koumi@insead.edu">Contact</a>
+  </p>
+</footer>
+
+<!-- ==================== PDF VIEWER MODAL ==================== -->
+<div class="modal-overlay" id="pdf-modal" onclick="closePDF(event)">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closePDF(event)">✕</button>
+    <iframe id="pdf-iframe" src=""></iframe>
+  </div>
+</div>
+
+<!-- ==================== SCRIPTS ==================== -->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
